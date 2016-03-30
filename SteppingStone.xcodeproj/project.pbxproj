@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE1C0BD41CA1DF9000FC6EDB /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1C0BD31CA1DF9000FC6EDB /* CloudKit.framework */; };
+		BE3CAB411C8643E800D326F9 /* Audio in Resources */ = {isa = PBXBuildFile; fileRef = BE3CAB401C8643E700D326F9 /* Audio */; };
+		BE8C3CD21C8609FF00F5702C /* Categories in Resources */ = {isa = PBXBuildFile; fileRef = BE8C3CD11C8609FF00F5702C /* Categories */; };
+		BEF3469D1C83CFEE00C3875B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF3469C1C83CFEE00C3875B /* AppDelegate.swift */; };
+		BEF3469F1C83CFEE00C3875B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF3469E1C83CFEE00C3875B /* ViewController.swift */; };
+		BEF346A21C83CFEE00C3875B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEF346A01C83CFEE00C3875B /* Main.storyboard */; };
+		BEF346A51C83CFEE00C3875B /* SteppingStone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BEF346A31C83CFEE00C3875B /* SteppingStone.xcdatamodeld */; };
+		BEF346A71C83CFEE00C3875B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEF346A61C83CFEE00C3875B /* Assets.xcassets */; };
+		BEF346AA1C83CFEE00C3875B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEF346A81C83CFEE00C3875B /* LaunchScreen.storyboard */; };
+		BEF346B51C83CFEE00C3875B /* SteppingStoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF346B41C83CFEE00C3875B /* SteppingStoneTests.swift */; };
+		BEF346C01C83CFEE00C3875B /* SteppingStoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF346BF1C83CFEE00C3875B /* SteppingStoneUITests.swift */; };
+		BEF346CE1C83E22400C3875B /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF346CD1C83E22400C3875B /* CategoryViewController.swift */; };
+		BEF346D41C83F3F400C3875B /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF346D31C83F3F400C3875B /* MyCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BEF346B11C83CFEE00C3875B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEF346911C83CFEE00C3875B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEF346981C83CFEE00C3875B;
+			remoteInfo = SteppingStone;
+		};
+		BEF346BC1C83CFEE00C3875B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEF346911C83CFEE00C3875B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEF346981C83CFEE00C3875B;
+			remoteInfo = SteppingStone;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE1C0BD21CA1DF8200FC6EDB /* SteppingStone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SteppingStone.entitlements; sourceTree = "<group>"; };
+		BE1C0BD31CA1DF9000FC6EDB /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		BE3CAB401C8643E700D326F9 /* Audio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Audio; sourceTree = "<group>"; };
+		BE8C3CD11C8609FF00F5702C /* Categories */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Categories; sourceTree = "<group>"; };
+		BEF346991C83CFEE00C3875B /* SteppingStone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SteppingStone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEF3469C1C83CFEE00C3875B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BEF3469E1C83CFEE00C3875B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BEF346A11C83CFEE00C3875B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BEF346A41C83CFEE00C3875B /* SteppingStone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SteppingStone.xcdatamodel; sourceTree = "<group>"; };
+		BEF346A61C83CFEE00C3875B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEF346A91C83CFEE00C3875B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BEF346AB1C83CFEE00C3875B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEF346B01C83CFEE00C3875B /* SteppingStoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SteppingStoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEF346B41C83CFEE00C3875B /* SteppingStoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteppingStoneTests.swift; sourceTree = "<group>"; };
+		BEF346B61C83CFEE00C3875B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEF346BB1C83CFEE00C3875B /* SteppingStoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SteppingStoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEF346BF1C83CFEE00C3875B /* SteppingStoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteppingStoneUITests.swift; sourceTree = "<group>"; };
+		BEF346C11C83CFEE00C3875B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEF346CD1C83E22400C3875B /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		BEF346D31C83F3F400C3875B /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEF346961C83CFEE00C3875B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE1C0BD41CA1DF9000FC6EDB /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEF346AD1C83CFEE00C3875B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEF346B81C83CFEE00C3875B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEF346901C83CFEE00C3875B = {
+			isa = PBXGroup;
+			children = (
+				BE1C0BD31CA1DF9000FC6EDB /* CloudKit.framework */,
+				BEF3469B1C83CFEE00C3875B /* SteppingStone */,
+				BEF346B31C83CFEE00C3875B /* SteppingStoneTests */,
+				BEF346BE1C83CFEE00C3875B /* SteppingStoneUITests */,
+				BEF3469A1C83CFEE00C3875B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEF3469A1C83CFEE00C3875B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEF346991C83CFEE00C3875B /* SteppingStone.app */,
+				BEF346B01C83CFEE00C3875B /* SteppingStoneTests.xctest */,
+				BEF346BB1C83CFEE00C3875B /* SteppingStoneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEF3469B1C83CFEE00C3875B /* SteppingStone */ = {
+			isa = PBXGroup;
+			children = (
+				BE1C0BD21CA1DF8200FC6EDB /* SteppingStone.entitlements */,
+				BEF3469C1C83CFEE00C3875B /* AppDelegate.swift */,
+				BEF3469E1C83CFEE00C3875B /* ViewController.swift */,
+				BEF346A01C83CFEE00C3875B /* Main.storyboard */,
+				BEF346CD1C83E22400C3875B /* CategoryViewController.swift */,
+				BEF346D31C83F3F400C3875B /* MyCollectionViewCell.swift */,
+				BE3CAB401C8643E700D326F9 /* Audio */,
+				BE8C3CD11C8609FF00F5702C /* Categories */,
+				BEF346A61C83CFEE00C3875B /* Assets.xcassets */,
+				BEF346A81C83CFEE00C3875B /* LaunchScreen.storyboard */,
+				BEF346AB1C83CFEE00C3875B /* Info.plist */,
+				BEF346A31C83CFEE00C3875B /* SteppingStone.xcdatamodeld */,
+			);
+			path = SteppingStone;
+			sourceTree = "<group>";
+		};
+		BEF346B31C83CFEE00C3875B /* SteppingStoneTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEF346B41C83CFEE00C3875B /* SteppingStoneTests.swift */,
+				BEF346B61C83CFEE00C3875B /* Info.plist */,
+			);
+			path = SteppingStoneTests;
+			sourceTree = "<group>";
+		};
+		BEF346BE1C83CFEE00C3875B /* SteppingStoneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BEF346BF1C83CFEE00C3875B /* SteppingStoneUITests.swift */,
+				BEF346C11C83CFEE00C3875B /* Info.plist */,
+			);
+			path = SteppingStoneUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEF346981C83CFEE00C3875B /* SteppingStone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEF346C41C83CFEE00C3875B /* Build configuration list for PBXNativeTarget "SteppingStone" */;
+			buildPhases = (
+				BEF346951C83CFEE00C3875B /* Sources */,
+				BEF346961C83CFEE00C3875B /* Frameworks */,
+				BEF346971C83CFEE00C3875B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SteppingStone;
+			productName = SteppingStone;
+			productReference = BEF346991C83CFEE00C3875B /* SteppingStone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BEF346AF1C83CFEE00C3875B /* SteppingStoneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEF346C71C83CFEE00C3875B /* Build configuration list for PBXNativeTarget "SteppingStoneTests" */;
+			buildPhases = (
+				BEF346AC1C83CFEE00C3875B /* Sources */,
+				BEF346AD1C83CFEE00C3875B /* Frameworks */,
+				BEF346AE1C83CFEE00C3875B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEF346B21C83CFEE00C3875B /* PBXTargetDependency */,
+			);
+			name = SteppingStoneTests;
+			productName = SteppingStoneTests;
+			productReference = BEF346B01C83CFEE00C3875B /* SteppingStoneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BEF346BA1C83CFEE00C3875B /* SteppingStoneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEF346CA1C83CFEE00C3875B /* Build configuration list for PBXNativeTarget "SteppingStoneUITests" */;
+			buildPhases = (
+				BEF346B71C83CFEE00C3875B /* Sources */,
+				BEF346B81C83CFEE00C3875B /* Frameworks */,
+				BEF346B91C83CFEE00C3875B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEF346BD1C83CFEE00C3875B /* PBXTargetDependency */,
+			);
+			name = SteppingStoneUITests;
+			productName = SteppingStoneUITests;
+			productReference = BEF346BB1C83CFEE00C3875B /* SteppingStoneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEF346911C83CFEE00C3875B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Jeff Chimney";
+				TargetAttributes = {
+					BEF346981C83CFEE00C3875B = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = JSZY8AYXNH;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					BEF346AF1C83CFEE00C3875B = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = BEF346981C83CFEE00C3875B;
+					};
+					BEF346BA1C83CFEE00C3875B = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = BEF346981C83CFEE00C3875B;
+					};
+				};
+			};
+			buildConfigurationList = BEF346941C83CFEE00C3875B /* Build configuration list for PBXProject "SteppingStone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEF346901C83CFEE00C3875B;
+			productRefGroup = BEF3469A1C83CFEE00C3875B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEF346981C83CFEE00C3875B /* SteppingStone */,
+				BEF346AF1C83CFEE00C3875B /* SteppingStoneTests */,
+				BEF346BA1C83CFEE00C3875B /* SteppingStoneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEF346971C83CFEE00C3875B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE8C3CD21C8609FF00F5702C /* Categories in Resources */,
+				BE3CAB411C8643E800D326F9 /* Audio in Resources */,
+				BEF346AA1C83CFEE00C3875B /* LaunchScreen.storyboard in Resources */,
+				BEF346A71C83CFEE00C3875B /* Assets.xcassets in Resources */,
+				BEF346A21C83CFEE00C3875B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEF346AE1C83CFEE00C3875B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEF346B91C83CFEE00C3875B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEF346951C83CFEE00C3875B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF346CE1C83E22400C3875B /* CategoryViewController.swift in Sources */,
+				BEF346D41C83F3F400C3875B /* MyCollectionViewCell.swift in Sources */,
+				BEF3469F1C83CFEE00C3875B /* ViewController.swift in Sources */,
+				BEF3469D1C83CFEE00C3875B /* AppDelegate.swift in Sources */,
+				BEF346A51C83CFEE00C3875B /* SteppingStone.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEF346AC1C83CFEE00C3875B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF346B51C83CFEE00C3875B /* SteppingStoneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEF346B71C83CFEE00C3875B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF346C01C83CFEE00C3875B /* SteppingStoneUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BEF346B21C83CFEE00C3875B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEF346981C83CFEE00C3875B /* SteppingStone */;
+			targetProxy = BEF346B11C83CFEE00C3875B /* PBXContainerItemProxy */;
+		};
+		BEF346BD1C83CFEE00C3875B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEF346981C83CFEE00C3875B /* SteppingStone */;
+			targetProxy = BEF346BC1C83CFEE00C3875B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BEF346A01C83CFEE00C3875B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEF346A11C83CFEE00C3875B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BEF346A81C83CFEE00C3875B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEF346A91C83CFEE00C3875B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEF346C21C83CFEE00C3875B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BEF346C31C83CFEE00C3875B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEF346C51C83CFEE00C3875B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SteppingStone/SteppingStone.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SteppingStone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeffsapps.SteppingStone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		BEF346C61C83CFEE00C3875B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SteppingStone/SteppingStone.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SteppingStone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeffsapps.SteppingStone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		BEF346C81C83CFEE00C3875B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SteppingStoneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeffsapps.SteppingStoneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SteppingStone.app/SteppingStone";
+			};
+			name = Debug;
+		};
+		BEF346C91C83CFEE00C3875B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SteppingStoneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeffsapps.SteppingStoneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SteppingStone.app/SteppingStone";
+			};
+			name = Release;
+		};
+		BEF346CB1C83CFEE00C3875B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SteppingStoneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeffsapps.SteppingStoneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SteppingStone;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		BEF346CC1C83CFEE00C3875B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SteppingStoneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeffsapps.SteppingStoneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SteppingStone;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEF346941C83CFEE00C3875B /* Build configuration list for PBXProject "SteppingStone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEF346C21C83CFEE00C3875B /* Debug */,
+				BEF346C31C83CFEE00C3875B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEF346C41C83CFEE00C3875B /* Build configuration list for PBXNativeTarget "SteppingStone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEF346C51C83CFEE00C3875B /* Debug */,
+				BEF346C61C83CFEE00C3875B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEF346C71C83CFEE00C3875B /* Build configuration list for PBXNativeTarget "SteppingStoneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEF346C81C83CFEE00C3875B /* Debug */,
+				BEF346C91C83CFEE00C3875B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEF346CA1C83CFEE00C3875B /* Build configuration list for PBXNativeTarget "SteppingStoneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEF346CB1C83CFEE00C3875B /* Debug */,
+				BEF346CC1C83CFEE00C3875B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BEF346A31C83CFEE00C3875B /* SteppingStone.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BEF346A41C83CFEE00C3875B /* SteppingStone.xcdatamodel */,
+			);
+			currentVersion = BEF346A41C83CFEE00C3875B /* SteppingStone.xcdatamodel */;
+			path = SteppingStone.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BEF346911C83CFEE00C3875B /* Project object */;
+}
